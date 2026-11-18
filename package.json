@@ -1,0 +1,21 @@
+{
+  "name": "overreturn-detector",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "接口过度返回检测：静态污点分析 + 运行时 Proxy 追踪 + 裁剪方案 + 回归验证",
+  "scripts": {
+    "detect": "node tool/cli.js all",
+    "analyze": "node tool/cli.js analyze",
+    "trace": "node tool/cli.js trace",
+    "report": "node tool/cli.js report",
+    "plan": "node tool/cli.js plan",
+    "regress": "node tool/cli.js regress",
+    "demo:server": "node sample-app/server/app.js 4173",
+    "demo:trimmed": "TRIM_PLAN=report/trim-plan.json node sample-app/server/app.js 4174"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.28.5",
+    "@babel/traverse": "^7.28.5"
+  }
+}

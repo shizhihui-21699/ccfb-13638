@@ -1,0 +1,61 @@
+{
+  "/api/users": {
+    "used": [
+      "avatarUrl",
+      "bio",
+      "department",
+      "displayName",
+      "email",
+      "id",
+      "phone",
+      "role",
+      "title"
+    ],
+    "weakSubtrees": [],
+    "dynamic": [],
+    "external": [
+      {
+        "arg": "(root)",
+        "file": "flows.js"
+      },
+      {
+        "arg": "(root)",
+        "file": "userListPage.js"
+      }
+    ],
+    "spreads": [
+      {
+        "at": "(root)",
+        "file": "flows.js"
+      },
+      {
+        "at": "(root)",
+        "file": "userListPage.js"
+      }
+    ]
+  },
+  "/api/users/:id": {
+    "used": [
+      "address.city",
+      "address.province",
+      "bio",
+      "costCenter",
+      "createdAt",
+      "department",
+      "displayName",
+      "failedLoginCount",
+      "internalNotes",
+      "lastLoginIp",
+      "loginCount",
+      "riskScore",
+      "social.github",
+      "title"
+    ],
+    "weakSubtrees": [
+      "preferences.*"
+    ],
+    "dynamic": [],
+    "external": [],
+    "spreads": []
+  }
+}

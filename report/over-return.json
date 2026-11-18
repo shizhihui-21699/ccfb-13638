@@ -1,0 +1,1102 @@
+{
+  "/api/users": {
+    "fields": [
+      {
+        "path": "address.city",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "address.detail",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "address.province",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "address.zip",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "avatarUrl",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "bankCard",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "bio",
+        "verdict": "keep",
+        "evidence": "static-only",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "costCenter",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "createdAt",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "deletedAt",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "department",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "displayName",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "email",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "failedLoginCount",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "flags.beta",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "flags.suspended",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "id",
+        "verdict": "keep",
+        "evidence": "static-only",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "idCardNumber",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "internalNotes",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "lastLoginAt",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "lastLoginIp",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "loginCount",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "managerId",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "passwordHash",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "passwordSalt",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "phone",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "preferences.language",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "preferences.notifications.email",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "preferences.notifications.sms",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "preferences.theme",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "riskScore",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "role",
+        "verdict": "keep",
+        "evidence": "static-only",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "salary",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "social.github",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "social.weibo",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "ssn",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "title",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "updatedAt",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "review",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "username",
+        "verdict": "keep",
+        "evidence": "runtime-only",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      }
+    ],
+    "notes": {
+      "dynamicKeys": [],
+      "externalCalls": [
+        {
+          "arg": "(root)",
+          "file": "flows.js"
+        },
+        {
+          "arg": "(root)",
+          "file": "userListPage.js"
+        }
+      ],
+      "spreads": [
+        {
+          "at": "(root)",
+          "file": "flows.js"
+        },
+        {
+          "at": "(root)",
+          "file": "userListPage.js"
+        }
+      ]
+    }
+  },
+  "/api/users/:id": {
+    "fields": [
+      {
+        "path": "address.city",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "address.detail",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "address.province",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "address.zip",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "avatarUrl",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "bankCard",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "bio",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "costCenter",
+        "verdict": "keep",
+        "evidence": "static-only",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "createdAt",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "deletedAt",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "department",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "displayName",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "email",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "failedLoginCount",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "flags.beta",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "flags.suspended",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "id",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "idCardNumber",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "internalNotes",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "lastLoginAt",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "lastLoginIp",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "loginCount",
+        "verdict": "keep",
+        "evidence": "static-only",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "managerId",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "passwordHash",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "passwordSalt",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "phone",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "preferences.language",
+        "verdict": "keep-review",
+        "evidence": "enumeration-only",
+        "staticUsed": false,
+        "staticWeak": true,
+        "runtimeUsed": false,
+        "runtimeWeak": true,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "preferences.notifications.email",
+        "verdict": "keep-review",
+        "evidence": "enumeration-only",
+        "staticUsed": false,
+        "staticWeak": true,
+        "runtimeUsed": false,
+        "runtimeWeak": true,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "preferences.notifications.sms",
+        "verdict": "keep-review",
+        "evidence": "enumeration-only",
+        "staticUsed": false,
+        "staticWeak": true,
+        "runtimeUsed": false,
+        "runtimeWeak": true,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "preferences.theme",
+        "verdict": "keep-review",
+        "evidence": "enumeration-only",
+        "staticUsed": false,
+        "staticWeak": true,
+        "runtimeUsed": false,
+        "runtimeWeak": true,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "riskScore",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "role",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "salary",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P1",
+          "label": "直接PII/薪酬"
+        }
+      },
+      {
+        "path": "social.github",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "social.weibo",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "ssn",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P0",
+          "label": "凭据/金融/证件"
+        }
+      },
+      {
+        "path": "title",
+        "verdict": "keep",
+        "evidence": "static+runtime",
+        "staticUsed": true,
+        "staticWeak": false,
+        "runtimeUsed": true,
+        "runtimeWeak": false,
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      },
+      {
+        "path": "updatedAt",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P2",
+          "label": "内部运营数据"
+        }
+      },
+      {
+        "path": "username",
+        "verdict": "trim",
+        "evidence": "never-read",
+        "staticUsed": false,
+        "staticWeak": false,
+        "runtimeUsed": false,
+        "runtimeWeak": false,
+        "confidence": "high",
+        "sensitivity": {
+          "level": "P3",
+          "label": "普通业务字段"
+        }
+      }
+    ],
+    "notes": {
+      "dynamicKeys": [],
+      "externalCalls": [],
+      "spreads": []
+    }
+  }
+}

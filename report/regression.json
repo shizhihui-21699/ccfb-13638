@@ -1,0 +1,478 @@
+{
+  "pass": true,
+  "flows": {
+    "user-list": "PASS",
+    "user-detail-member": "PASS",
+    "user-detail-admin": "PASS"
+  },
+  "rawChecks": [
+    {
+      "endpoint": "/api/users",
+      "field": "address.city",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "address.detail",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "address.province",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "address.zip",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "bankCard",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "costCenter",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "createdAt",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "deletedAt",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "failedLoginCount",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "flags.beta",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "flags.suspended",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "idCardNumber",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "internalNotes",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "lastLoginAt",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "lastLoginIp",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "loginCount",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "managerId",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "passwordHash",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "passwordSalt",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "preferences.language",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "preferences.notifications.email",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "preferences.notifications.sms",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "preferences.theme",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "riskScore",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "salary",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "social.github",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "social.weibo",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "ssn",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "updatedAt",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "avatarUrl",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "bio",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "department",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "displayName",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "email",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "id",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "phone",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "role",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "title",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users",
+      "field": "username",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "address.detail",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "address.zip",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "avatarUrl",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "bankCard",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "deletedAt",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "email",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "flags.beta",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "flags.suspended",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "id",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "idCardNumber",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "lastLoginAt",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "managerId",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "passwordHash",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "passwordSalt",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "phone",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "role",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "salary",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "social.weibo",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "ssn",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "updatedAt",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "username",
+      "expect": "absent",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "address.city",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "address.province",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "bio",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "costCenter",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "createdAt",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "department",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "displayName",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "failedLoginCount",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "internalNotes",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "lastLoginIp",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "loginCount",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "preferences.language",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "preferences.notifications.email",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "preferences.notifications.sms",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "preferences.theme",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "riskScore",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "social.github",
+      "expect": "present",
+      "pass": true
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "field": "title",
+      "expect": "present",
+      "pass": true
+    }
+  ]
+}
